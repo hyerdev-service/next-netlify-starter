@@ -5,52 +5,35 @@ media_folder: public/img
 public_folder: img
 
 collections:
-  - name: "pages"
-    label: "Pages"
-    files:
-      - label: "Home"
-        name: "home"
-        file: "content/home.md"
-        fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Publish Date", name: "date", widget: "datetime" }
-          - { label: "Body", name: "body", widget: "markdown" }
-          - label: "Cats"
-            name: "cats"
-            widget: list
-            fields:
-              - { label: "Name", name: "name", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
-
-      - label: "carvalima"
-        name: "Carvalima"
-        folder: "content/carvalima"
-        create: true
-        fields:
-          - {
-              label: "description",
-              name: "Descrição",
-              widget: "string",
-              required: true,
-            }
-          - {
-              label: "hasPlusSign",
-              name: "Tem sinal de mais",
-              widget: "boolean",
-              required: true,
-            }
-          - {
-              label: "number",
-              name: "Numero",
-              widget: "number",
-              value_type: "float",
-              required: true,
-            }
-          - {
-              label: "icon",
-              name: "Icone",
-              widget: "image",
-              allow_multiple: "false",
-              required: true,
-            }
-          - { label: "grandeza", name: "Ordem de grandeza", widget: "string" }
+  - label: "carvalima"
+    name: "Carvalima"
+    folder: "content/carvalima"
+    create: true
+    fields:
+      - {
+          label: "description",
+          name: "Descrição",
+          widget: string,
+          required: true,
+        }
+      - {
+          label: "hasPlusSign",
+          name: "Tem sinal de mais",
+          widget: boolean,
+          required: true,
+        }
+      - {
+          label: "number",
+          name: "Numero",
+          widget: number,
+          value_type: "float",
+          required: true,
+        }
+      - {
+          label: "icon",
+          name: "Icone",
+          widget: image,
+          allow_multiple: false,
+          required: true,
+        }
+      - { label: "grandeza", name: "Ordem de grandeza", widget: string }
