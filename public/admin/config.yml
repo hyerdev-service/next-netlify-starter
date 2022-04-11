@@ -8,7 +8,6 @@ collections:
   - label: "carvalima"
     name: "Carvalima"
     folder: "content/carvalima"
-    create: true
     fields:
       - {
           label: "description",
@@ -16,12 +15,7 @@ collections:
           widget: string,
           required: true,
         }
-      - {
-          label: "hasPlusSign",
-          name: "Tem sinal de mais",
-          widget: boolean,
-          required: true,
-        }
+      - { label: "hasPlusSign", name: "Tem sinal de mais", widget: boolean }
       - {
           label: "number",
           name: "Numero",
