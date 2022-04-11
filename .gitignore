@@ -31,3 +31,9 @@ yarn-error.log*
 
 # Local Netlify folder
 .netlify
+
+.next/
+node_modules/
+/npm-debug.log
+.DS_Store
+out/
