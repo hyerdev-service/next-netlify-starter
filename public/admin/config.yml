@@ -5,8 +5,8 @@ media_folder: public/img
 public_folder: img
 
 collections:
-  - label: "carvalima"
-    name: "Carvalima"
+  - label: "Carvalima"
+    name: "carvalima"
     folder: "content/carvalima"
     create: true
     fields:
@@ -31,4 +31,9 @@ collections:
           allow_multiple: false,
           required: true,
         }
-      - { label: "grandeza", name: "Ordem de grandeza", widget: string }
+      - {
+          label: "grandeza",
+          name: "Ordem de grandeza",
+          widget: string,
+          required: false,
+        }
