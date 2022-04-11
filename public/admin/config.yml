@@ -16,7 +16,12 @@ collections:
           widget: string,
           required: true,
         }
-      - { label: "hasPlusSign", name: "Tem sinal de mais", widget: boolean }
+      - {
+          label: "hasPlusSign",
+          name: "Tem sinal de mais",
+          widget: boolean,
+          required: false,
+        }
       - {
           label: "number",
           name: "Numero",
