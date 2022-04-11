@@ -8,7 +8,6 @@ collections:
   - label: "Carvalima"
     name: "carvalima"
     folder: "content/carvalima"
-    create: true
     fields:
       - {
           label: "description",
