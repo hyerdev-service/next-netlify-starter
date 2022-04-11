@@ -22,8 +22,8 @@ collections:
               - { label: "Name", name: "name", widget: "string" }
               - { label: "Description", name: "description", widget: "text" }
 
-      - label: "Numeros Carvalima"
-      - name: "carvalima"
+      - label: "carvalima"
+        name: "Carvalima"
         folder: "content/carvalima"
         create: true
         fields:
